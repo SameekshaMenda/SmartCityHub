@@ -23,16 +23,21 @@
 
         // Fix the imageUrl by checking and correcting the prefix
         let imageUrl = data.imageUrl;
-        if (imageUrl && imageUrl.startsWith("http://localhost:5000")) {
-          imageUrl = imageUrl.replace("http://localhost:5000", ""); // Remove localhost part
-        }
+
+// If the URL contains both 'http://localhost:5000' and a Cloudinary URL, remove the localhost part.
+if (imageUrl && imageUrl.startsWith("http://localhost:5000")) {
+  imageUrl = imageUrl.replace("http://localhost:5000", "");
+}
+console.log("image processing")
+console.log(imageUrl); // Log the image URL to check if it is correct
+
+// Now you can safely use imageUrl in the img tag
+
 
         container.innerHTML = `
           <p><strong>Complaint ID:</strong> ${data.complaintId}</p>
           <p><strong>Name:</strong> ${data.name}</p>
           <p><strong>Email:</strong> ${data.email}</p>
-          <p><strong>Contact:</strong> ${data.contact || '<span class="text-gray-500 italic">Not provided</span>'}</p>
-          <p><strong>Address:</strong> ${data.address || '<span class="text-gray-500 italic">Not provided</span>'}</p>
           <p><strong>Status:</strong> <span class="${data.status === 'Pending' ? 'text-red-600 font-semibold' : 'text-green-600 font-semibold'}">${data.status}</span></p>
           <p><strong>Complaint:</strong> ${data.complaint}</p>
           ${imageUrl ? `
