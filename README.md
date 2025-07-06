@@ -1,4 +1,4 @@
-# SmartCityHub 🏙
+# SmartCityHub 
 
 **SmartCityHub** is a web-based complaint management system designed to streamline the process of registering and resolving public issues in urban areas. The platform allows citizens to submit complaints, while administrators can manage, track, and resolve them through an intuitive dashboard.
 
@@ -17,6 +17,6 @@
 - **Status Updates**: Mark complaints as resolved/in progress/pending.
 - **Complaint Details**: Detailed view for each complaint with citizen information.
 
-### Glimpse
+### 🏙 Glimpse:
 ![Home Page Preview](https://github.com/user-attachments/assets/30d5e213-e236-4db9-9cae-f13af0d4ab7f)
 
