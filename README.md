@@ -16,6 +16,7 @@
 - **View Complaints**: Dashboard displaying all submitted complaints.
 - **Status Updates**: Mark complaints as resolved/in progress/pending.
 - **Complaint Details**: Detailed view for each complaint with citizen information.
-  
+
+### Glimpse
 ![Home Page Preview](https://github.com/user-attachments/assets/30d5e213-e236-4db9-9cae-f13af0d4ab7f)
 
